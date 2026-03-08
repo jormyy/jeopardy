@@ -7,11 +7,7 @@ function formatScore(score) {
   return score < 0 ? `-$${formatted}` : `$${formatted}`;
 }
 
-export default function GameBoard({ players, usedTiles, onTileClick, onFinalJeopardy }) {
-  const allUsed = CATEGORIES.every((cat, ci) =>
-    cat.questions.every((_, qi) => usedTiles.has(`${ci}-${qi}`))
-  );
-
+export default function GameBoard({ players, usedTiles, onTileClick }) {
   return (
     <div className="game-layout">
       {/* Scoreboard */}
@@ -56,14 +52,6 @@ export default function GameBoard({ players, usedTiles, onTileClick, onFinalJeop
           )}
         </div>
 
-        <div className="board-footer">
-          <button
-            className="final-btn"
-            onClick={onFinalJeopardy}
-          >
-            {allUsed ? 'Proceed to Final Jeopardy →' : 'Skip to Final Jeopardy →'}
-          </button>
-        </div>
       </div>
     </div>
   );

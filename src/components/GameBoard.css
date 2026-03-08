@@ -107,28 +107,3 @@
   cursor: default;
 }
 
-/* ── Footer ── */
-.board-footer {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.final-btn {
-  padding: 12px 28px;
-  background: #f0c040;
-  color: #000080;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: 900;
-  font-family: inherit;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  transition: background 0.15s, transform 0.1s;
-  text-transform: uppercase;
-}
-
-.final-btn:hover {
-  background: #ffe060;
-  transform: translateY(-1px);
-}

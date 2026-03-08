@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { CATEGORIES } from './data/questions';
 import SetupScreen from './components/SetupScreen';
 import GameBoard from './components/GameBoard';
 import QuestionModal from './components/QuestionModal';
@@ -28,11 +29,15 @@ function App() {
     );
   };
 
+  const totalTiles = CATEGORIES.reduce((sum, cat) => sum + cat.questions.length, 0);
+
   const handleQuestionClose = (adjustments) => {
     if (adjustments) applyAdjustments(adjustments);
-    setUsedTiles((prev) =>
-      new Set([...prev, `${activeQuestion.categoryIndex}-${activeQuestion.questionIndex}`])
-    );
+    setUsedTiles((prev) => {
+      const next = new Set([...prev, `${activeQuestion.categoryIndex}-${activeQuestion.questionIndex}`]);
+      if (next.size === totalTiles) setPhase('final');
+      return next;
+    });
     setActiveQuestion(null);
   };
 
@@ -58,7 +63,6 @@ function App() {
             players={players}
             usedTiles={usedTiles}
             onTileClick={handleTileClick}
-            onFinalJeopardy={() => setPhase('final')}
           />
           {activeQuestion && (
             <QuestionModal
