@@ -5,62 +5,62 @@
 
 export const CATEGORIES = [
   {
-    name: "Science & Nature",
+    name: "Sports (General)",
     questions: [
       {
         value: 100,
-        question: "This planet is known as the Red Planet.",
-        answer: "Mars",
+        question: "This hockey player has the most career points in NHL history, with 2,857.",
+        answer: "Wayne Gretzky",
       },
       {
         value: 200,
-        question: "The chemical formula H₂O represents this everyday substance.",
-        answer: "Water",
+        question: "This hall of fame NBA player, who is arguably a top power forward of all time, impregnated a 13-year-old girl when he was 20-years-old.",
+        answer: "Karl Malone",
       },
       {
         value: 300,
-        question: "This force is responsible for keeping planets in orbit around the Sun.",
-        answer: "Gravity",
+        question: "This must occur for a player to be awarded a penalty kick in soccer.",
+        answer: "A foul committed inside the penalty area",
       },
       {
         value: 400,
-        question: "DNA stands for this full scientific term.",
-        answer: "Deoxyribonucleic Acid",
+        question: "Tom Brady subbed in for this injured quarterback in 2001, leading the New England Patriots to a Super Bowl victory and starting his legendary career.",
+        answer: "Drew Bledsoe",
       },
       {
         value: 500,
-        question: "This element has atomic number 79, the chemical symbol Au, and is prized for its lustrous yellow sheen.",
-        answer: "Gold",
+        question: "This Greek pole vaulter, friend of Giannis Antetokounmpo, recently jumped the second highest height in history. Name this pole vaulter. (Bonus for naming the height in meters.)",
+        answer: "Emmanouil Karalis (6.17 meters)",
       },
     ],
   },
   {
-    name: "World History",
+    name: "Anime",
     questions: [
       {
         value: 100,
-        question: "These massive structures in Egypt were built as royal tombs for pharaohs.",
-        answer: "The Pyramids (Great Pyramid of Giza)",
+        question: "This character aims to become the Pirate King by finding the legendary treasure known as One Piece.",
+        answer: "Monkey D. Luffy",
       },
       {
         value: 200,
-        question: "The Berlin Wall fell in this year, reuniting East and West Germany.",
-        answer: "1989",
+        question: "Kirito, the protagonist of 'Sword Art Online', was the sole owner of this particular skill.",
+        answer: "Dual Wielding",
       },
       {
         value: 300,
-        question: "After his defeat at Waterloo, Napoleon Bonaparte was exiled to this remote South Atlantic island.",
-        answer: "Saint Helena",
+        question: "Finish the quote from 'Chainsaw Man': 'I'll give you my heart, in exchange...'",
+        answer: "Show me your dreams",
       },
       {
         value: 400,
-        question: "Signed in 1215 by King John of England, this document was one of the first to limit royal power.",
-        answer: "The Magna Carta",
+        question: "This is the highest rated anime on IMDB.",
+        answer: "Fullmetal Alchemist: Brotherhood",
       },
       {
         value: 500,
-        question: "Founded by Genghis Khan in the 13th century, this became the largest contiguous land empire in history.",
-        answer: "The Mongol Empire",
+        question: "This is the name of the man who was reincarnated as a slime in the anime 'That Time I Got Reincarnated as a Slime'.",
+        answer: "Satoru Mikami",
       },
     ],
   },
@@ -69,38 +69,38 @@ export const CATEGORIES = [
     questions: [
       {
         value: 100,
-        question: "This boy wizard, created by J.K. Rowling, lives at 4 Privet Drive and attends Hogwarts School.",
-        answer: "Harry Potter",
+        question: "This is the true identity of the superhero, Batman.",
+        answer: "Bruce Wayne",
       },
       {
         value: 200,
-        question: "This DC superhero is also known as billionaire Bruce Wayne, the Dark Knight of Gotham City.",
-        answer: "Batman",
+        question: "This singer was known for leaving Olivia Rodrigo for Sabrina Carpenter.",
+        answer: "Joshua Bassett",
       },
       {
         value: 300,
-        question: "Released in 1982, this Michael Jackson album is the best-selling album of all time.",
-        answer: "Thriller",
+        question: "Finish the lyrics: 'Shawty a lil baddie. She my lil boo thing...'",
+        answer: "And shawty got the fatty. Shawty be catching mood swings",
       },
       {
         value: 400,
-        question: "This 1991 Nirvana album, featuring 'Smells Like Teen Spirit', defined grunge rock.",
-        answer: "Nevermind",
+        question: "This song, created by Laufey in her album 'Bewitched', was used in Alysia Liu's performance at the 2026 Winter Olympics, where she won a gold medal in figure skating.",
+        answer: "Promise",
       },
       {
         value: 500,
-        question: "In this 1994 Quentin Tarantino film, John Travolta and Uma Thurman perform a memorable twist dance at Jack Rabbit Slim's.",
-        answer: "Pulp Fiction",
+        question: "Take turns naming Disney films until someone can't name one. The last person to successfully name a Disney film wins (no sequels or prequels).",
+        answer: "",
       },
     ],
   },
   {
-    name: "Geography",
+    name: "Food",
     questions: [
       {
         value: 100,
-        question: "This is the largest continent on Earth by both land area and population.",
-        answer: "Asia",
+        question: "Although they typically indulge in every other vice, such as smoking and drinking, Muslims abstain from consuming this type of meat.",
+        answer: "Pork",
       },
       {
         value: 200,
@@ -119,13 +119,13 @@ export const CATEGORIES = [
       },
       {
         value: 500,
-        question: "This tiny republic, completely surrounded by Italy, claims to be the world's oldest surviving sovereign state.",
-        answer: "San Marino",
+        question: "As of March 8, 2026, this is the cost of a Caniac Combo (pre-tax) at Davis's Raising Cane's (closest answer wins if no correct answer is given).",
+        answer: "$18.69",
       },
     ],
   },
   {
-    name: "Sports",
+    name: "Friend Group Frenzy",
     questions: [
       {
         value: 100,
