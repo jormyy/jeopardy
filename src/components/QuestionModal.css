@@ -170,6 +170,34 @@
   transform: scale(0.92);
 }
 
+/* ── Bonus button ── */
+.bonus-btn {
+  padding: 0 12px;
+  height: 36px;
+  border-radius: 18px;
+  border: 2px solid #aa8800;
+  background: transparent;
+  color: #f0c040;
+  font-size: 13px;
+  font-weight: 900;
+  font-family: inherit;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.12s, border-color 0.12s, transform 0.1s;
+  white-space: nowrap;
+}
+
+.bonus-btn:hover,
+.bonus-btn.active-bonus {
+  background: #7a5c00;
+  border-color: #f0c040;
+  color: #ffe080;
+}
+
+.bonus-btn:active {
+  transform: scale(0.92);
+}
+
 /* ── Done button ── */
 .done-btn {
   padding: 14px 48px;

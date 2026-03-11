@@ -5,21 +5,29 @@ import './QuestionModal.css';
 export default function QuestionModal({ question, players, onClose }) {
   const [revealed, setReveal] = useState(false);
   const [adjustments, setAdjustments] = useState(() => Array(players.length).fill(null));
+  const [bonuses, setBonuses] = useState(() => Array(players.length).fill(false));
 
   const toggle = (playerIndex, direction) => {
     setAdjustments((prev) => {
       const next = [...prev];
-      // Toggle: clicking same direction again clears it
       next[playerIndex] = prev[playerIndex] === direction ? null : direction;
       return next;
     });
   };
 
+  const toggleBonus = (playerIndex) => {
+    setBonuses((prev) => {
+      const next = [...prev];
+      next[playerIndex] = !prev[playerIndex];
+      return next;
+    });
+  };
+
   const handleDone = () => {
-    const deltas = adjustments.map((adj) => {
-      if (adj === 'correct') return question.value;
-      if (adj === 'incorrect') return -question.value;
-      return 0;
+    const deltas = adjustments.map((adj, i) => {
+      const main = adj === 'correct' ? question.value : adj === 'incorrect' ? -question.value : 0;
+      const bonus = question.bonus && bonuses[i] ? 100 : 0;
+      return main + bonus;
     });
     onClose(deltas);
   };
@@ -47,6 +55,9 @@ export default function QuestionModal({ question, players, onClose }) {
             <div className="modal-players">
               {players.map((p, i) => {
                 const adj = adjustments[i];
+                const hasBonus = question.bonus && bonuses[i];
+                const mainDelta = adj === 'correct' ? question.value : adj === 'incorrect' ? -question.value : 0;
+                const totalDelta = mainDelta + (hasBonus ? 100 : 0);
                 return (
                   <div key={i} className="player-adj-row">
                     <button
@@ -62,9 +73,9 @@ export default function QuestionModal({ question, players, onClose }) {
                       <span className={`player-adj-score ${p.score < 0 ? 'neg' : ''}`}>
                         {formatScore(p.score)}
                       </span>
-                      {adj && (
-                        <span className={`adj-preview ${adj === 'correct' ? 'preview-pos' : 'preview-neg'}`}>
-                          {adj === 'correct' ? `+$${question.value}` : `-$${question.value}`}
+                      {(adj || hasBonus) && (
+                        <span className={`adj-preview ${totalDelta >= 0 ? 'preview-pos' : 'preview-neg'}`}>
+                          {totalDelta >= 0 ? `+$${totalDelta}` : `-$${Math.abs(totalDelta)}`}
                         </span>
                       )}
                     </div>
@@ -76,6 +87,16 @@ export default function QuestionModal({ question, players, onClose }) {
                     >
                       +
                     </button>
+
+                    {question.bonus && (
+                      <button
+                        className={`bonus-btn ${bonuses[i] ? 'active-bonus' : ''}`}
+                        onClick={() => toggleBonus(i)}
+                        title="+$100 bonus"
+                      >
+                        +$100
+                      </button>
+                    )}
                   </div>
                 );
               })}
