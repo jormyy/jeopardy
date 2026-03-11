@@ -52,9 +52,9 @@ export const CATEGORIES = [
       },
       {
         value: 200,
-        bonus: false,
-        question: "Kirito, the protagonist of 'Sword Art Online', was the sole owner of this particular skill.",
-        answer: "Dual Wielding",
+        bonus: true,
+        question: "Kirito, the protagonist of 'Sword Art Online', was the sole owner of this particular skill (bonus for naming how he obtained it).",
+        answer: "Dual Wielding (fastest reaction time among players)",
       },
       {
         value: 300,
@@ -105,14 +105,14 @@ export const CATEGORIES = [
       },
       {
         value: 500,
-        bonus: false,
-        question: "Take turns naming Disney films until someone can't name one. The last person to successfully name a Disney film wins (no sequels or prequels).",
-        answer: "",
+        bonus: true,
+        question: "As of March 10, 2026, this is the Disney franchise that has earned the most money (bonus for giving the amount within $1 billion).",
+        answer: "Mickey Mouse & Friends ($52.2 billion)",
       },
     ],
   },
   {
-    name: "Food",
+    name: "Food & Drink",
     questions: [
       {
         value: 100,
@@ -123,8 +123,8 @@ export const CATEGORIES = [
       {
         value: 200,
         bonus: false,
-        question: "The Amazon River, the world's largest river by discharge, flows primarily through this country.",
-        answer: "Brazil",
+        question: "This drink, named after legendary golfer Arnold Palmer, is a mix of these two beverages.",
+        answer: "Iced Tea and Lemonade",
       },
       {
         value: 300,
@@ -135,8 +135,8 @@ export const CATEGORIES = [
       {
         value: 400,
         bonus: false,
-        question: "The world's largest hot desert, the Sahara, stretches across this continent.",
-        answer: "Africa",
+        question: "This is the name of the artificial sweetener that is commonly used in diet sodas.",
+        answer: "Aspartame",
       },
       {
         value: 500,
@@ -147,7 +147,7 @@ export const CATEGORIES = [
     ],
   },
   {
-    name: "Friend Group Frenzy",
+    name: "Friend Group Trivia",
     questions: [
       {
         value: 100,
