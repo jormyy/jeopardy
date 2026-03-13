@@ -129,55 +129,55 @@ export const CATEGORIES = [
       {
         value: 300,
         bonus: false,
-        question: "Despite popular belief, this city — not Sydney — is the capital of Australia.",
-        answer: "Canberra",
-      },
-      {
-        value: 400,
-        bonus: false,
         question: "This is the name of the artificial sweetener that is commonly used in diet sodas.",
         answer: "Aspartame",
       },
       {
-        value: 500,
+        value: 400,
         bonus: false,
         question: "As of March 8, 2026, this is the cost of a Caniac Combo (pre-tax) at Davis's Raising Cane's (closest answer wins if no correct answer is given).",
         answer: "$18.69",
       },
+      {
+        value: 500,
+        bonus: false,
+        question: "This is the name of the restaurant that is credited with inventing the double-decker hamburger in 1937.",
+        answer: "Bob's Big Boy",
+      },
     ],
   },
   {
-    name: "Friend Group Trivia",
+    name: "Meet the Maker",
     questions: [
       {
         value: 100,
         bonus: false,
-        question: "Played on a diamond-shaped field with four bases, this is America's pastime.",
-        answer: "Baseball",
+        question: "This is the name of Jeremy's favorite basketball player.",
+        answer: "Michael Porter Jr.",
       },
       {
         value: 200,
         bonus: false,
-        question: "Michael Jordan won all six of his NBA championships playing for this team.",
-        answer: "The Chicago Bulls",
+        question: "Jeremy did taekwondo when he was younger. This is the belt rank he currently holds.",
+        answer: "3rd degree black belt",
       },
       {
         value: 300,
         bonus: false,
-        question: "With five FIFA World Cup titles, this South American country has won the tournament more than any other.",
-        answer: "Brazil",
+        question: "This is the name of Jeremy's favorite anime character.",
+        answer: "L",
       },
       {
         value: 400,
         bonus: false,
-        question: "Born Cassius Clay, this heavyweight boxing legend was nicknamed 'The Greatest'.",
-        answer: "Muhammad Ali",
+        question: "If Jeremy were to order a drink at a bar, this is the drink he would most likely order.",
+        answer: "Gin and tonic",
       },
       {
         value: 500,
         bonus: false,
-        question: "In 1980, this American hockey team's upset victory over the Soviet Union at the Lake Placid Olympics was dubbed the 'Miracle on Ice'.",
-        answer: "Team USA (United States)",
+        question: "These are the names of Jeremy's parents.",
+        answer: "Chris and Katie",
       },
     ],
   },
@@ -188,8 +188,8 @@ export const CATEGORIES = [
 // ============================================================
 
 export const FINAL_JEOPARDY = {
-  category: "American Icons",
+  category: "Names",
   question:
-    "Dedicated in 1886, this gift from France stands on Liberty Island in New York Harbor and depicts a robed figure holding a torch aloft.",
-  answer: "The Statue of Liberty",
+    "Write down as many boy names as you can that start with the letter J. The person with the most names wins.",
+  answer: "",
 };
