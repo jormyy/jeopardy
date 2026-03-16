@@ -38,7 +38,7 @@ export default function QuestionModal({ question, players, onClose }) {
   };
 
   return (
-    <div className="modal-backdrop" onClick={(e) => e.target === e.currentTarget && handleDone()}>
+    <div className="modal-backdrop">
       <div className="modal">
         <div className="modal-value">${question.value}</div>
 
