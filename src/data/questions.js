@@ -147,7 +147,7 @@ export const CATEGORIES = [
     ],
   },
   {
-    name: "Literature",
+    name: "Memories",
     questions: [
       {
         value: 100,
