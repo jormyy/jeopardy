@@ -1,109 +1,110 @@
 .game-layout {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: #060ce9;
-  padding: 16px;
-  gap: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #060ce9;
+    padding: 16px;
+    gap: 16px;
 }
 
 /* ── Scoreboard ── */
 .scoreboard {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
 .score-card {
-  background: #000080;
-  border: 3px solid #f0c040;
-  border-radius: 10px;
-  padding: 10px 24px;
-  text-align: center;
-  min-width: 120px;
+    background: #000080;
+    border: 3px solid #f0c040;
+    border-radius: 10px;
+    padding: 10px 24px;
+    text-align: center;
+    min-width: 120px;
 }
 
 .score-name {
-  font-size: 14px;
-  font-weight: 700;
-  color: #aac8ff;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #aac8ff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
 }
 
 .score-value {
-  font-size: 26px;
-  font-weight: 900;
-  color: #f0c040;
+    font-size: 26px;
+    font-weight: 900;
+    color: #f0c040;
 }
 
 .score-value.negative {
-  color: #ff6060;
+    color: #ff6060;
 }
 
 /* ── Board ── */
 .board-wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 .board {
-  display: grid;
-  gap: 6px;
-  flex: 1;
+    display: grid;
+    gap: 6px;
+    flex: 1;
 }
 
 .category-header {
-  background: #000080;
-  border: 3px solid #f0c040;
-  border-radius: 6px;
-  padding: 14px 8px;
-  text-align: center;
-  font-size: clamp(12px, 1.4vw, 18px);
-  font-weight: 900;
-  color: #f0c040;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  line-height: 1.2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    background: #000080;
+    border: 3px solid #f0c040;
+    border-radius: 6px;
+    padding: 14px 8px;
+    text-align: center;
+    font-size: clamp(12px, 1.4vw, 18px);
+    font-weight: 900;
+    color: #f0c040;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tile {
-  background: #060ce9;
-  border: 3px solid #1a2fff;
-  border-radius: 6px;
-  color: #f0c040;
-  font-size: clamp(18px, 2.5vw, 36px);
-  font-weight: 900;
-  font-family: inherit;
-  cursor: pointer;
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.12s, transform 0.1s;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    background: #060ce9;
+    border: 3px solid #1a2fff;
+    border-radius: 6px;
+    color: #f0c040;
+    font-size: clamp(18px, 2.5vw, 36px);
+    font-weight: 900;
+    font-family: inherit;
+    cursor: pointer;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:
+        background 0.12s,
+        transform 0.1s;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .tile:hover:not(:disabled) {
-  background: #1a1aff;
-  transform: scale(1.03);
-  border-color: #f0c040;
+    background: #1a1aff;
+    transform: scale(1.03);
+    border-color: #f0c040;
 }
 
 .tile:active:not(:disabled) {
-  transform: scale(0.98);
+    transform: scale(0.98);
 }
 
 .tile--used {
-  background: #001540;
-  border-color: #001540;
-  cursor: default;
+    background: #001540;
+    border-color: #001540;
+    cursor: default;
 }
-

@@ -1,16 +1,18 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  background: #060ce9;
-  font-family: 'Arial Black', 'Arial Bold', Arial, sans-serif;
-  min-height: 100vh;
-  color: white;
+    background: #060ce9;
+    font-family: 'Arial Black', 'Arial Bold', Arial, sans-serif;
+    min-height: 100vh;
+    color: white;
 }
 
 #root {
-  min-height: 100vh;
+    min-height: 100vh;
 }
